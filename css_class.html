@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html lang="zh-cn" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>实验2_类选择符</title>
+    <style>
+        body{
+            background-color:gray;/*设置背景色方便阅读*/
+        }
+        p:not(.para5){
+            font-family:"serif";
+            color:white;
+            text-align:center;
+            font-size:large;
+        }
+        .para1{
+            background-color:tomato;
+        }
+        .para2{
+            background-color:dodgerblue;
+        }
+        h2.para1{
+            background-color:blueviolet;
+            text-align:center;
+            color:white;
+        }
+        p.para3{
+            background-color:gold;
+        }
+        p.para4{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <p>我是未分类段落</p>
+    <br />
+    <p class="para1">我是para1类</p>
+    <p class="para2">我是para2类</p>
+    <p class="para1">我是para1类</p>
+    <p class="para2">我是para2类</p>
+    <p class="para1">我是para1类</p>
+    <p class="para2">我是para2类</p>
+    <p class="para1">我是para1类</p>
+    <br />
+    <h1 class="para1">我是para1类，同时也是h1标题</h1>
+    <h2 class="para1">我也是para1类，但我是被特别规定样式的h2标题</h2>
+    <br />
+    <p class="para3">我是para3类</p>
+    <p class="para4">我是para4类</p>
+    <p class="para3 para4">我即是para3类也是para4类</p>
+    <br />
+    <p class="para5">我是para5类,我被排除在p的样式中</p>
+</body>
+</html>

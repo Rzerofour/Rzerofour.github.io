@@ -1,0 +1,18 @@
+﻿body {
+    background-color: gray; /*设置背景色方便阅读*/
+}
+p:not(#p5) {
+    font-family: "serif";
+    color: white;
+    text-align: center;
+    font-size: large;
+}
+#p1{
+    background-color:tomato;
+}
+#p2 {
+    background-color:dodgerblue;
+}
+#p3,#p4{
+    background-color:blueviolet;
+}
