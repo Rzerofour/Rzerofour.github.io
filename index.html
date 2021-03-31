@@ -2,37 +2,45 @@
 
 <html lang="zh-cn" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>个人主页</title>
+    <link rel="stylesheet" type="text/css" href="leadbar.css" />
     <style>
-        h1 {
+        div:not(.leadbar,.dropdown-content,.double-dropdown-content) {
             text-align: center;
-            color: white;
-            font-family: "Microsoft YaHei";
-            background-color: #992578;
-        }
-         div{
-            text-align: center;
-            margin:auto;
+            margin: auto;
             color: black;
             font-family: "Microsoft YaHei";
-            border:3px solid #992578;
-            padding:10px;
+            border: 3px solid #992578;
+            padding: 10px;
         }
-        .para{
-             font-family:"Microsoft YaHei";
-             font-size:40px;
-             color:black;
+
+        .para {
+            font-family: "Microsoft YaHei";
+            font-size: 40px;
+            color: black;
         }
     </style>
     <!--    <script language="javascript" type="text/javascript"></script>     -->
 </head>
 <body>
-    <h1>个人主页</h1>
+    <div id="leadbar" class="leadbar">
+        <ul>
+            <li><a href="#">个人中心</a></li>
+            <li class="dropdown">
+                <a class="dropbtn">test</a>
+                <div class="dropdown-content">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                </div>
+            </li>
+        </ul>
+    </div>
     <div>
         <p class="para">孙思亮<br /></p>
         <p class="para">919107390128<br /></p>
-        <p><a href="mailto:someone@microsoft.com?subject=Hello%20again">919107390128@njust.edu.cn</a><br/></p>
+        <p><a href="mailto:someone@microsoft.com?subject=Hello%20again">919107390128@njust.edu.cn</a><br /></p>
         <p><a href="https://github.com/Rzerofour/ssl.github.io">我的github主页</a></p>
         <p>
             <a href="http://www.njust.edu.cn/"><img src="njust.png" title="南京理工大学" alt="南京理工大学" /></a>
