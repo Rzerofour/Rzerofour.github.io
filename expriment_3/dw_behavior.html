@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="zh-cn" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<title>实验3-行为</title>
+	<style>
+		#a {
+			background-color: tomato;
+			height: 100px;
+			width: 300px;
+			margin: auto;
+			text-align: center;
+			color: white;
+		}
+	</style>
+	<script type="text/javascript">
+		function MM_changeProp(objId, x, theProp, theValue) { //v9.0
+			var obj = null; with (document) {
+				if (getElementById)
+					obj = getElementById(objId);
+			}
+			if (obj) {
+				if (theValue == true || theValue == false)
+					eval("obj.style." + theProp + "=" + theValue);
+				else eval("obj.style." + theProp + "='" + theValue + "'");
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<div id="a"><p>我是一个图层</p></div>
+	<button onMouseDown="MM_changeProp('a','','backgroundColor','dodgerblue','DIV')">点我切换颜色</button>
+</body>
+</html>
