@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>jquery实验二</title>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#bt1").click(function () {
+                $("ol").append("<li>新建日程</li>")
+            })
+            $("#bt2").click(function () {
+                $("ol").empty()
+            }) 
+        })
+    </script>
+</head>
+<body>
+    <h1>日程表</h1>
+    <button id="bt1">增加新项目</button>
+    <button id="bt2">清空项目</button>
+    <ol>
+        <li>默认日程1</li>
+        <li>默认日程2</li>
+        <li>默认日程3</li>
+    </ol>
+</body>
+</html>

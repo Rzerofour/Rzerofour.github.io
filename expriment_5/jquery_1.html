@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>jquery实验一</title>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#sun").fadeOut("slow", function () {
+                    $("body").css("background-color", "#3f3f3f")
+                    $("button").text("天黑了")
+                })
+            })
+        });
+    </script>
+</head>
+<body>
+    <img id="sun" src="sun.png" width="64" height="64" alt="sun" />
+        <button>点我！</button>
+</body>
+</html>

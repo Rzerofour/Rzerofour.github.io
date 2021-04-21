@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>jquery实验三</title>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#bt").click(function () {
+                $("li").filter(".rm").remove()
+            })
+            $("li").click(function () {
+                $(this).css("background-color", "yellow")
+                $(this).attr("class","rm")
+            })
+        })
+    </script>
+</head>
+<body>
+    <h1>日程表</h1>
+    <button id="bt">点我删除选中项</button>
+    <ul>
+        <li>默认日程1</li>
+        <li>默认日程2</li>
+        <li>默认日程3</li>
+        <li>默认日程4</li>
+        <li>默认日程5</li>
+        <li>默认日程6</li>
+        <li>默认日程7</li>
+        <li>默认日程8</li>
+        <li>默认日程9</li>
+        <li>默认日程10</li>
+    </ul>
+</body>
+</html>
